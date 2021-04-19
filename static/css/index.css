@@ -17,6 +17,10 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Catamaran", sans-serif;
     background: var(--mainWhite);
@@ -137,6 +141,111 @@ body {
     width: 100%;
     height: .4rem;
     background-image: linear-gradient(to right, var(--primaryColor), var(--secondaryColor), var(--primaryColor));
+}
+
+.contact {
+    padding: 5.875rem 1.5rem;
+    padding-top: 2rem;
+    display: grid;
+    gap: 2.5rem;
+}
+
+.contact-info {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.contact-title>span {
+    color: var(--primaryColor);
+    font-size: 1.6rem;
+}
+
+.contact-title {
+    display: flex;
+    gap: 1rem;
+}
+
+.contact-sub {
+    letter-spacing: var(--letterSpacing);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.contact-info-desc {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.form-control {
+    width: 100%;
+    color: var(--primaryColor);
+    text-transform: uppercase;
+    margin: 2rem auto;
+}
+
+.form-control input::placeholder,
+.form-control textarea::placeholder {
+    color: var(--primaryColor);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: var(--letterSpacing);
+}
+
+.form-control input:focus,
+.form-control textarea:focus {
+    outline: none;
+}
+
+.form-control input,
+.form-control textarea {
+    width: 100%;
+    padding: .7rem 0;
+    border: none;
+    border-bottom: 2px solid var(--primaryColor);
+}
+
+.form-btn {
+    padding: 1rem;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+@media screen and (min-width: 720px) {
+    .contact {
+        padding-left: 6rem;
+        padding-right: 6rem;
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.footer {
+    padding: 2rem 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: var(--letterSpacing);
+    background: var(--mainDark);
+    color: var(--mainWhite);
+}
+
+.social-link {
+    color: var(--mainWhite);
+    transition: var(--mainTransition);
+}
+
+.social-link:hover {
+    color: var(--primaryColor);
+}
+
+.footer-attribution span {
+    color: var(--primaryColor);
+}
+
+.footer-attr a {
+    text-decoration: none;
+    color: var(--primaryColor);
 }
 
 
@@ -348,7 +457,9 @@ body {
 @media screen and (min-width: 720px) {
     .services-card-container {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        padding-left: 6.25rem;
+        padding-right: 6.25rem;
     }
 }
 

@@ -18,16 +18,16 @@
     <nav class="menu">
         <ul class="menu-list">
             <li class="menu-list-item">
-                <a href="">Home</a>
+                <a href="/">Home</a>
             </li>
             <li class="menu-list-item">
-                <a href="">skills</a>
+                <a href="#skills">skills</a>
             </li>
             <li class="menu-list-item">
-                <a href="">about</a>
+                <a href="#about">about</a>
             </li>
             <li class="menu-list-item">
-                <a href="">products</a>
+                <a href="#products">products</a>
             </li>
         </ul>
     </nav>
@@ -44,7 +44,7 @@
     </header>
     <div class="container-divider"></div>
     <main class="container">
-        <section class="skills">
+        <section class="skills" id="skills">
             <article class="skill">
                 <span class="skill-icon">
                     <i class="fas fa-mug-hot"></i>
@@ -76,7 +76,7 @@
 
         </section>
 
-        <section class="about">
+        <section class="about" id="about">
             <div class="about-img-container border">
                 <img src="./static/img/about-bcg.jpeg" alt="about" class="about-img">
             </div>
@@ -92,7 +92,7 @@
                 <a href="/about" class="btn about-btn">learn more</a>
             </div>
         </section>
-        <section class="products">
+        <section class="products" id="products">
             <div class="products-header">
                 <h2 class="subtitle products-sub">check out</h2>
                 <h2 class="products-title">our products</h2>
@@ -119,7 +119,7 @@
             </div>
 
         </section>
-        <section class="services">
+        <section class="services" id="services">
             <h3 class="subtitle services-sub">explore</h3>
             <h2 class="services-title">our service</h2>
             <div class="services-card-container">
@@ -173,8 +173,62 @@
                 </article>
             </div>
         </section>
+        <section class="contact" id="contact">
+            <div class="contact-info">
+                <div class="contact-info-control">
+                    <div class="contact-title">
+                        <span class="contact-icon"><i class="fas fa-location-arrow"></i></span>
+                        <h3 class="subtitle contact-sub">address</h3>
+                    </div>
+                    <p class="contact-info-desc">523 n fairfax ave, los angeles, ca 90048</p>
+                </div>
+                <div class="contact-info-control">
+                    <div class="contact-title">
+                        <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+                        <h3 class="subtitle contact-sub">email</h3>
+                    </div>
+                    <p class="contact-info-desc">email@email.com</p>
+                </div>
+                <div class="contact-info-control">
+                    <div class="contact-title">
+                        <span class="contact-icon"><i class="fas fa-phone"></i></span>
+                        <h3 class="subtitle contact-sub">telephone</h3>
+                    </div>
+                    <p class="contact-info-desc"> 123 456 789</p>
+                </div>
+            </div>
+            <div class="contact-data">
+                <form action="https://formspree.io/f/mpzkwrvb" class="contact-form" method="POST">
+                    <div class="form-control">
+                        <input type="text" placeholder="name" name="_name">
+                    </div>
+                    <div class="form-control">
+                        <input type="email" placeholder="email" name="_replyto">
+                    </div>
+                    <div class="form-control">
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="message"></textarea>
+                    </div>
+                    <button type="submit" class="btn form-btn">send</button>
+                </form>
+            </div>
+
+
+        </section>
 
     </main>
+    <footer class="footer">
+        <div class="footer-social-container">
+            <a href="" class="social-link"><i class="fab fa-facebook "></i></a>
+            <a href="" class="social-link"><i class="fab fa-twitter "></i></a>
+            <a href="" class="social-link"><i class="fab fa-instagram "></i></a>
+        </div>
+        <div class="footer-info">
+            <p class="footer-attribution">&copy; 2021 <span>tea station.</span>all rights reserved</p>
+            <p class="footer-attr">challenge by : <a href="https://www.johnsmilga.com/">John Smilga</a> code by: <a href="https://github.com/Takata21">MTakata</a></p>
+
+        </div>
+
+    </footer>
 
 </body>
 
