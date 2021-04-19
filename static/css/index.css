@@ -26,6 +26,7 @@ body {
     background: var(--mainWhite);
     color: var(--mainDark);
     line-height: 1.5;
+    overflow-x: hidden;
 }
 
 .border {
@@ -40,6 +41,8 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     margin-top: 2rem;
+    transition: var(--mainTransition);
+    animation: slideFromLeft 5s ease-in-out 1;
 }
 
 .subtitle {
@@ -49,6 +52,32 @@ body {
 
 .text2 {
     font-size: 2rem;
+    transition: var(--mainTransition);
+    animation: slideFromRight 5s ease-in-out 1;
+}
+
+@keyframes slideFromRight {
+    0% {
+        transform: translateX(1000px);
+    }
+    50% {
+        transform: translateX(-300px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideFromLeft {
+    0% {
+        transform: translateX(-1000px);
+    }
+    50% {
+        transform: translateX(300px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 .btn {
@@ -64,6 +93,23 @@ body {
 .banner-btn {
     padding: .7rem 1rem;
     margin-top: 2rem;
+    transition: var(--mainTransition);
+    animation: btnIn 5s ease-in-out 1;
+}
+
+@keyframes btnIn {
+    0% {
+        transform: scale(2);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(.5);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 
@@ -97,6 +143,7 @@ body {
 
 .about-img-container:hover .about-img {
     transform: scale(1.2);
+    opacity: .7;
 }
 
 .about-img {
