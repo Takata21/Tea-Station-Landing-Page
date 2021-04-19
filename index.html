@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea Station</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&family=Grand+Hotel&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./static/fontawesome-free-5.7.2-web/css/all.css" />
+    <link rel="stylesheet" href="./static/css/index.css">
+</head>
+
+<body>
+    <input type="checkbox" name="menu-check" id="menu-check" class="menu-check">
+    <nav class="menu">
+        <ul class="menu-list">
+            <li class="menu-list-item">
+                <a href="">Home</a>
+            </li>
+            <li class="menu-list-item">
+                <a href="">skills</a>
+            </li>
+            <li class="menu-list-item">
+                <a href="">about</a>
+            </li>
+            <li class="menu-list-item">
+                <a href="">products</a>
+            </li>
+        </ul>
+    </nav>
+    <label class="hamburger-menu" for="menu-check">
+       
+    </label>
+    <header class="hero">
+        <div class="banner">
+            <h2 class="subtitle text2">over one hunred flavors of tea</h2>
+            <h1 class="title">specially crafted tea</h1>
+            <a href="/explore" class="btn banner-btn">explore</a>
+        </div>
+
+    </header>
+    <div class="container-divider"></div>
+    <main class="container">
+        <section class="skills">
+            <article class="skill">
+                <span class="skill-icon">
+                    <i class="fas fa-mug-hot"></i>
+                </span>
+                <h3 class="skill-title">made in us</h3>
+                <p class="skill-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, fuga.</p>
+            </article>
+            <article class="skill">
+                <span class="skill-icon">
+                    <i class="fas fa-glass-cheers"></i>
+                </span>
+                <h3 class="skill-title">made in us</h3>
+                <p class="skill-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, fuga.</p>
+            </article>
+            <article class="skill">
+                <span class="skill-icon">
+                    <i class="fas fa-bomb"></i>
+                </span>
+                <h3 class="skill-title">made in us</h3>
+                <p class="skill-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, fuga.</p>
+            </article>
+            <article class="skill">
+                <span class="skill-icon">
+                    <i class="fas fa-mortar-pestle"></i>
+                </span>
+                <h3 class="skill-title">made in us</h3>
+                <p class="skill-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, fuga.</p>
+            </article>
+
+        </section>
+
+        <section class="about">
+            <div class="about-img-container border">
+                <img src="./static/img/about-bcg.jpeg" alt="about" class="about-img">
+            </div>
+            <div class="about-info ">
+                <h2 class="subtitle about-sub">About Our</h2>
+                <h2 class="about-title">tea station</h2>
+                <p class="about-desc">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe nulla possimus cumque? Architecto culpa quae cupiditate optio quam .
+                </p>
+                <p class="about-desc">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe nulla possimus cumque? Architecto culpa quae cupiditate optio quam .
+                </p>
+                <a href="/about" class="btn about-btn">learn more</a>
+            </div>
+        </section>
+        <section class="products">
+            <div class="products-header">
+                <h2 class="subtitle products-sub">check out</h2>
+                <h2 class="products-title">our products</h2>
+                <p class="products-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed hic facilis cum ab voluptates illum earum accusantium tempore expedita soluta.</p>
+                <a href="/products" class="products-btn btn">inventory</a>
+            </div>
+
+            <div class="products-items">
+                <article class="product">
+                    <img src="./static/img/product-1.jpeg" alt="product-1" class="product-img">
+                    <h2 class="product-title">produc title</h2>
+                    <p class="product-price subtitle">$ 6.99</p>
+                </article>
+                <article class="produtc">
+                    <img src="./static/img/product-2.jpeg" alt="product-1" class="product-img">
+                    <h2 class="product-title">produc title</h2>
+                    <p class="product-price subtitle">$ 6.99</p>
+                </article>
+                <article class="produtc">
+                    <img src="./static/img/product-3.jpeg" alt="product-1" class="product-img">
+                    <h2 class="product-title">produc title</h2>
+                    <p class="product-price subtitle">$ 6.99</p>
+                </article>
+            </div>
+
+        </section>
+        <section class="services">
+            <h3 class="subtitle services-sub">explore</h3>
+            <h2 class="services-title">our service</h2>
+            <div class="services-card-container">
+                <article class="service-card">
+                    <div class="card-img-container">
+                        <img src="./static/img/product-1.jpeg" alt="" class="service-card-img">
+                        <span class="service-icon">
+                            <i class="fas fa-mortar-pestle fa-fw"></i>
+                        </span>
+                    </div>
+                    <div class="service-card-info">
+
+                        <h2 class="service-card-title">custon recipes service</h2>
+                        <a href="" class="service-card-btn">
+                            read more
+                        </a>
+                    </div>
+
+                </article>
+                <article class="service-card">
+                    <div class="card-img-container">
+                        <img src="./static/img/product-2.jpeg" alt="" class="service-card-img">
+                        <span class="service-icon">
+                            <i class="fas fa-mug-hot fa-fw"></i>
+                        </span>
+                    </div>
+                    <div class="service-card-info">
+
+                        <h2 class="service-card-title">custon recipes service</h2>
+                        <a href="" class="service-card-btn">
+                            read more
+                        </a>
+                    </div>
+
+                </article>
+                <article class="service-card">
+                    <div class="card-img-container">
+                        <img src="./static/img/product-3.jpeg" alt="" class="service-card-img">
+                        <span class="service-icon">
+                            <i class="fas fa-mug-hot fa-fw"></i>
+                        </span>
+                    </div>
+                    <div class="service-card-info">
+
+                        <h2 class="service-card-title">custon recipes service</h2>
+                        <a href="" class="service-card-btn">
+                            read more
+                        </a>
+                    </div>
+
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
